@@ -1,0 +1,470 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "game": "神獣召喚記",
+    "description": "デイリー、ウィークリー、ストーリークエストデータ",
+    "last_updated": "2026-05-19"
+  },
+  "quests": {
+    "daily": [
+      {
+        "id": "daily_summon_1",
+        "title": "日課：1回召喚",
+        "description": "神獣を1回召喚する",
+        "type": "summon",
+        "target": 1,
+        "reward": {
+          "gems": 10,
+          "exp": 50
+        },
+        "difficulty": "easy"
+      },
+      {
+        "id": "daily_battle_3",
+        "title": "日課：3回バトル",
+        "description": "バトルに3回勝利する",
+        "type": "battle_win",
+        "target": 3,
+        "reward": {
+          "gems": 20,
+          "exp": 100
+        },
+        "difficulty": "easy"
+      },
+      {
+        "id": "daily_deck_check",
+        "title": "日課：デッキ確認",
+        "description": "デッキページを開いて神獣を確認する",
+        "type": "deck_view",
+        "target": 1,
+        "reward": {
+          "gems": 5,
+          "exp": 30
+        },
+        "difficulty": "easy"
+      },
+      {
+        "id": "daily_consecutive_win_3",
+        "title": "日課：3連勝",
+        "description": "バトルで3連勝する",
+        "type": "consecutive_win",
+        "target": 3,
+        "reward": {
+          "gems": 30,
+          "exp": 150
+        },
+        "difficulty": "medium"
+      },
+      {
+        "id": "daily_visit_all_pages",
+        "title": "日課：全ページ巡回",
+        "description": "ガチャ、デッキ、バトルの全ページを訪れる",
+        "type": "page_visit",
+        "target": 3,
+        "reward": {
+          "gems": 15,
+          "exp": 80
+        },
+        "difficulty": "easy"
+      }
+    ],
+    "weekly": [
+      {
+        "id": "weekly_summon_10",
+        "title": "週課：10連召喚",
+        "description": "10連召喚を1回実行する",
+        "type": "ten_summon",
+        "target": 1,
+        "reward": {
+          "gems": 100,
+          "exp": 500
+        },
+        "difficulty": "medium"
+      },
+      {
+        "id": "weekly_battle_20",
+        "title": "週課：20回勝利",
+        "description": "バトルで合計20回勝利する",
+        "type": "battle_win",
+        "target": 20,
+        "reward": {
+          "gems": 150,
+          "exp": 800
+        },
+        "difficulty": "medium"
+      },
+      {
+        "id": "weekly_ssr_summon",
+        "title": "週課：SSR召喚",
+        "description": "SSRを1体召喚する",
+        "type": "summon_ssr",
+        "target": 1,
+        "reward": {
+          "gems": 200,
+          "exp": 1000
+        },
+        "difficulty": "hard"
+      },
+      {
+        "id": "weekly_boss_defeat_5",
+        "title": "週課：鵺を5回撃破",
+        "description": "ボス「鵺」に5回勝利する",
+        "type": "boss_defeat",
+        "target": 5,
+        "reward": {
+          "gems": 180,
+          "exp": 900
+        },
+        "difficulty": "hard"
+      },
+      {
+        "id": "weekly_collection_sr",
+        "title": "週課：SR3種類収集",
+        "description": "異なるSR神獣を3種類所持する",
+        "type": "collection",
+        "target": 3,
+        "rarity": "SR",
+        "reward": {
+          "gems": 120,
+          "exp": 600
+        },
+        "difficulty": "medium"
+      }
+    ],
+    "story": [
+      {
+        "id": "story_001_first_summon",
+        "title": "物語：初めての召喚",
+        "description": "白咲の導きで、初めて神獣を召喚する",
+        "type": "tutorial",
+        "chapter": 1,
+        "reward": {
+          "gems": 50,
+          "exp": 200
+        },
+        "dialogue": [
+          {
+            "speaker": "白咲",
+            "text": "ようこそ、神獣の社へ。私が白咲です。"
+          },
+          {
+            "speaker": "白咲",
+            "text": "この石を使えば、神獣を召喚できます。試してみましょう。"
+          }
+        ]
+      },
+      {
+        "id": "story_002_first_battle",
+        "title": "物語：初陣",
+        "description": "仁王の元で、初めてバトルに挑む",
+        "type": "battle",
+        "chapter": 2,
+        "reward": {
+          "gems": 50,
+          "exp": 200
+        },
+        "dialogue": [
+          {
+            "speaker": "仁王",
+            "text": "来たか、召喚士。まずはザコ鬼で腕試しだ。"
+          },
+          {
+            "speaker": "仁王",
+            "text": "神獣の力、存分に発揮してみせろ！"
+          }
+        ]
+      },
+      {
+        "id": "story_003_meet_genbu",
+        "title": "物語：賢者との出会い",
+        "description": "玄武に会い、デッキの重要性を学ぶ",
+        "type": "deck",
+        "chapter": 3,
+        "reward": {
+          "gems": 50,
+          "exp": 200
+        },
+        "dialogue": [
+          {
+            "speaker": "玄武",
+            "text": "ふむ、新たな召喚士か。デッキを見せてみよ。"
+          },
+          {
+            "speaker": "玄武",
+            "text": "神獣の組み合わせが、勝敗を左右するのじゃ。"
+          }
+        ]
+      },
+      {
+        "id": "story_004_first_sr",
+        "title": "物語：強力な神獣",
+        "description": "初めてSR以上の神獣を召喚する",
+        "type": "summon_sr_or_higher",
+        "chapter": 4,
+        "reward": {
+          "gems": 100,
+          "exp": 300
+        },
+        "dialogue": [
+          {
+            "speaker": "白咲",
+            "text": "この輝き……SR以上の神獣です！"
+          },
+          {
+            "speaker": "白咲",
+            "text": "あなたの運が開けてきましたね。"
+          }
+        ]
+      },
+      {
+        "id": "story_005_boss_challenge",
+        "title": "物語：妖怪の王・鵺",
+        "description": "初めて鵺に挑戦する",
+        "type": "boss_challenge",
+        "chapter": 5,
+        "reward": {
+          "gems": 150,
+          "exp": 500
+        },
+        "dialogue": [
+          {
+            "speaker": "仁王",
+            "text": "鵺は妖怪の王だ。生半可な力では勝てんぞ。"
+          },
+          {
+            "speaker": "仁王",
+            "text": "準備は良いか？ならば挑め！"
+          }
+        ]
+      },
+      {
+        "id": "story_006_first_ssr",
+        "title": "物語：伝説の降臨",
+        "description": "初めてSSRを召喚する",
+        "type": "summon_ssr",
+        "chapter": 6,
+        "reward": {
+          "gems": 200,
+          "exp": 800
+        },
+        "dialogue": [
+          {
+            "speaker": "白咲",
+            "text": "なんという光……これは、SSR！"
+          },
+          {
+            "speaker": "白咲",
+            "text": "伝説の神獣が、あなたを選びました！"
+          }
+        ]
+      },
+      {
+        "id": "story_007_amaterasu_meet",
+        "title": "物語：太陽神・アマテラス",
+        "description": "アマテラスを召喚する",
+        "type": "summon_specific",
+        "target_beast": "amaterasu",
+        "chapter": 7,
+        "reward": {
+          "gems": 300,
+          "exp": 1000
+        },
+        "dialogue": [
+          {
+            "speaker": "アマテラス",
+            "text": "我が名はアマテラス。汝を召喚士と認めよう。"
+          },
+          {
+            "speaker": "アマテラス",
+            "text": "この光で、闇を払うがよい。"
+          }
+        ]
+      },
+      {
+        "id": "story_008_susanoo_meet",
+        "title": "物語：嵐神・スサノオ",
+        "description": "スサノオを召喚する",
+        "type": "summon_specific",
+        "target_beast": "susanoo",
+        "chapter": 8,
+        "reward": {
+          "gems": 300,
+          "exp": 1000
+        },
+        "dialogue": [
+          {
+            "speaker": "スサノオ",
+            "text": "俺がスサノオだ。お前の力、試させてもらうぞ。"
+          },
+          {
+            "speaker": "スサノオ",
+            "text": "この草薙の剣で、全てを薙ぎ払う！"
+          }
+        ]
+      },
+      {
+        "id": "story_009_tsukuyomi_meet",
+        "title": "物語：月神・ツクヨミ",
+        "description": "ツクヨミを召喚する",
+        "type": "summon_specific",
+        "target_beast": "tsukuyomi",
+        "chapter": 9,
+        "reward": {
+          "gems": 300,
+          "exp": 1000
+        },
+        "dialogue": [
+          {
+            "speaker": "ツクヨミ",
+            "text": "私はツクヨミ。月の力、お貸ししましょう。"
+          },
+          {
+            "speaker": "ツクヨミ",
+            "text": "静寂の中に、真理がある……"
+          }
+        ]
+      },
+      {
+        "id": "story_010_three_nobles",
+        "title": "物語：三貴神の集結",
+        "description": "アマテラス、スサノオ、ツクヨミを全て所持する",
+        "type": "collection_specific",
+        "target_beasts": ["amaterasu", "susanoo", "tsukuyomi"],
+        "chapter": 10,
+        "reward": {
+          "gems": 500,
+          "exp": 2000
+        },
+        "dialogue": [
+          {
+            "speaker": "鸞",
+            "text": "三貴神が揃いました……これは奇跡です。"
+          },
+          {
+            "speaker": "アマテラス",
+            "text": "久しぶりだな、スサノオ、ツクヨミ。"
+          },
+          {
+            "speaker": "スサノオ",
+            "text": "姉上……まさか、こうして揃うとは。"
+          },
+          {
+            "speaker": "ツクヨミ",
+            "text": "運命が、私たちを再び結びつけたようですね。"
+          }
+        ]
+      }
+    ],
+    "achievement": [
+      {
+        "id": "ach_summon_first",
+        "title": "初めての召喚",
+        "description": "初めて神獣を召喚した",
+        "type": "summon",
+        "target": 1,
+        "reward": {
+          "gems": 10,
+          "title": "見習い召喚士"
+        }
+      },
+      {
+        "id": "ach_summon_100",
+        "title": "召喚の達人",
+        "description": "累計100回召喚した",
+        "type": "summon",
+        "target": 100,
+        "reward": {
+          "gems": 500,
+          "title": "召喚の達人"
+        }
+      },
+      {
+        "id": "ach_battle_first_win",
+        "title": "初勝利",
+        "description": "初めてバトルに勝利した",
+        "type": "battle_win",
+        "target": 1,
+        "reward": {
+          "gems": 10,
+          "title": "駆け出し戦士"
+        }
+      },
+      {
+        "id": "ach_battle_100_wins",
+        "title": "百戦錬磨",
+        "description": "累計100回勝利した",
+        "type": "battle_win",
+        "target": 100,
+        "reward": {
+          "gems": 500,
+          "title": "百戦錬磨"
+        }
+      },
+      {
+        "id": "ach_boss_first_defeat",
+        "title": "鵺撃破",
+        "description": "初めて鵺を倒した",
+        "type": "boss_defeat",
+        "target": 1,
+        "reward": {
+          "gems": 100,
+          "title": "妖怪ハンター"
+        }
+      },
+      {
+        "id": "ach_collection_all_r",
+        "title": "Rコンプリート",
+        "description": "全てのRカードを集めた",
+        "type": "collection_rarity",
+        "rarity": "R",
+        "reward": {
+          "gems": 200,
+          "title": "Rコレクター"
+        }
+      },
+      {
+        "id": "ach_collection_all_sr",
+        "title": "SRコンプリート",
+        "description": "全てのSRカードを集めた",
+        "type": "collection_rarity",
+        "rarity": "SR",
+        "reward": {
+          "gems": 500,
+          "title": "SRコレクター"
+        }
+      },
+      {
+        "id": "ach_collection_all_ssr",
+        "title": "SSRコンプリート",
+        "description": "全てのSSRカードを集めた（三貴神）",
+        "type": "collection_rarity",
+        "rarity": "SSR",
+        "reward": {
+          "gems": 1000,
+          "title": "伝説のコレクター"
+        }
+      },
+      {
+        "id": "ach_collection_complete",
+        "title": "図鑑完成",
+        "description": "全ての神獣を集めた",
+        "type": "collection_all",
+        "reward": {
+          "gems": 2000,
+          "title": "神獣マスター"
+        }
+      },
+      {
+        "id": "ach_consecutive_10",
+        "title": "連勝記録",
+        "description": "10連勝を達成した",
+        "type": "consecutive_win",
+        "target": 10,
+        "reward": {
+          "gems": 300,
+          "title": "連勝王"
+        }
+      }
+    ]
+  }
+}
